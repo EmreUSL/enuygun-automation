@@ -1,6 +1,7 @@
 # EnUygun-Automation
 
 This project automates flight search and filtering on **Enuygun.com** using **Selenium** and, following a clean and maintainable **Page Object Model (POM)** structure.
+<img width="1146" height="463" alt="Screenshot 2025-11-13 at 22 04 51" src="https://github.com/user-attachments/assets/af922043-b234-481c-9168-99062b83bca9" />
 
 ## Overview
 
