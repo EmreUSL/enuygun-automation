@@ -1,6 +1,6 @@
 # EnUygun-Automation
 
-This project is an automation framework for testing flight search functionalities on Enuygun.com. It covers various scenarios including round-trip flight searches, time filters, airline-specific price sorting, and currency validation (TRY/EUR). The framework is designed to be modular and maintainable, using the Page Object Model (POM) structure for all pages and components.
+This project is an automation framework for testing flight search functionalities on enuygun.com. It covers various scenarios including round-trip flight searches, time filters, airline-specific price sorting, and currency validation (TRY/EUR). The framework is designed to be modular and maintainable, using the Page Object Model (POM) structure for all pages and components.
 
 
 
