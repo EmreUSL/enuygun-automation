@@ -1,0 +1,73 @@
+2025-11-13 18:45:54 [main] INFO  Log - Starting WebDriver
+2025-11-13 18:45:57 [main] INFO  Log - Navigating to URL
+2025-11-13 18:46:07 [main] INFO  Log - Closing Browser
+2025-11-13 18:52:46 [main] INFO  Log - Starting WebDriver
+2025-11-13 18:52:49 [main] INFO  Log - Navigating to URL
+2025-11-13 18:53:01 [main] INFO  Log - Closing Browser
+2025-11-13 18:54:25 [main] INFO  Log - Starting WebDriver
+2025-11-13 18:54:29 [main] INFO  Log - Navigating to URL
+2025-11-13 18:54:31 [main] INFO  Log - Closing Browser
+2025-11-13 18:54:52 [main] INFO  Log - Starting WebDriver
+2025-11-13 18:54:53 [main] INFO  Log - Navigating to URL
+2025-11-13 18:54:57 [main] INFO  Log - Closing Browser
+2025-11-13 18:55:27 [main] INFO  Log - Starting WebDriver
+2025-11-13 18:55:30 [main] INFO  Log - Navigating to URL
+2025-11-13 18:55:33 [main] INFO  Log - Navigating Flight List Page
+2025-11-13 18:55:39 [main] INFO  Log - All flight displayed in screen successfully
+2025-11-13 18:55:39 [main] INFO  Log - Departure time are in range
+2025-11-13 18:55:39 [main] INFO  Log - Selected route is true
+2025-11-13 18:55:39 [main] INFO  Log - Closing Browser
+2025-11-13 18:57:02 [main] INFO  Log - Starting WebDriver
+2025-11-13 18:57:06 [main] INFO  Log - Navigating to URL
+2025-11-13 18:57:09 [main] INFO  Log - Navigating Flight List Page
+2025-11-13 18:57:15 [main] INFO  Log - All flight displayed in screen successfully
+2025-11-13 18:57:15 [main] INFO  Log - Closing Browser
+2025-11-13 18:57:31 [main] INFO  Log - Starting WebDriver
+2025-11-13 18:57:34 [main] INFO  Log - Navigating to URL
+2025-11-13 18:57:38 [main] INFO  Log - Navigating Flight List Page
+2025-11-13 18:57:46 [main] INFO  Log - All flight displayed in screen successfully
+2025-11-13 18:57:46 [main] INFO  Log - Departure time are in range
+2025-11-13 18:57:46 [main] INFO  Log - Selected route is true
+2025-11-13 18:57:46 [main] INFO  Log - Closing Browser
+2025-11-13 18:57:56 [main] INFO  Log - Starting WebDriver
+2025-11-13 18:57:59 [main] INFO  Log - Navigating to URL
+2025-11-13 18:58:10 [main] INFO  Log - Closing Browser
+2025-11-13 21:14:05 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:14:12 [main] INFO  Log - Navigating to URL
+2025-11-13 21:14:20 [main] INFO  Log - Closing Browser
+2025-11-13 21:15:41 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:15:44 [main] INFO  Log - Navigating to URL
+2025-11-13 21:15:50 [main] INFO  Log - Closing Browser
+2025-11-13 21:16:14 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:16:17 [main] INFO  Log - Navigating to URL
+2025-11-13 21:16:38 [main] INFO  Log - Closing Browser
+2025-11-13 21:16:55 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:16:59 [main] INFO  Log - Navigating to URL
+2025-11-13 21:17:19 [main] INFO  Log - Closing Browser
+2025-11-13 21:18:14 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:18:17 [main] INFO  Log - Navigating to URL
+2025-11-13 21:18:24 [main] INFO  Log - Closing Browser
+2025-11-13 21:20:20 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:20:23 [main] INFO  Log - Navigating to URL
+2025-11-13 21:20:31 [main] INFO  Log - Closing Browser
+2025-11-13 21:27:08 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:27:12 [main] INFO  Log - Navigating to URL
+2025-11-13 21:27:19 [main] INFO  Log - Closing Browser
+2025-11-13 21:30:48 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:30:50 [main] INFO  Log - Navigating to URL
+2025-11-13 21:30:59 [main] INFO  Log - Closing Browser
+2025-11-13 21:31:39 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:31:42 [main] INFO  Log - Navigating to URL
+2025-11-13 21:31:51 [main] INFO  Log - Closing Browser
+2025-11-13 21:33:02 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:33:06 [main] INFO  Log - Navigating to URL
+2025-11-13 21:33:15 [main] INFO  Log - Closing Browser
+2025-11-13 21:38:08 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:38:12 [main] INFO  Log - Navigating to URL
+2025-11-13 21:38:20 [main] INFO  Log - Closing Browser
+2025-11-13 21:40:22 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:40:25 [main] INFO  Log - Navigating to URL
+2025-11-13 21:40:33 [main] INFO  Log - Closing Browser
+2025-11-13 21:41:43 [main] INFO  Log - Starting WebDriver
+2025-11-13 21:41:47 [main] INFO  Log - Navigating to URL
+2025-11-13 21:41:54 [main] INFO  Log - Closing Browser

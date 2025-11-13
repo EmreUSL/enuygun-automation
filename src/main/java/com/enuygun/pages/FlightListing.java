@@ -2,6 +2,7 @@ package com.enuygun.pages;
 
 import com.enuygun.base.BasePage;
 import com.enuygun.utils.ConfigReader;
+import com.enuygun.utils.DataAnalyzer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,9 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class FlightListing extends BasePage {
 
@@ -28,13 +27,22 @@ public class FlightListing extends BasePage {
     private final By airlineFlightFilterDropdown = By.xpath("//div[@class='ctx-filter-airline card-header']");
     private final By selectTHYButton = By.xpath("//span[contains(text(),'Türk Hava Yolları')]");
     private final By flightList = By.xpath("//div[@class='search-result search-result-departure-only']");
-    private final By priceElements = By.xpath("//span[@class='money-int']");
-    private final By flightsDepartureTimes = By.xpath("//div[@class='flight-departure-time']");
     private final By whereFrom = By.xpath("//div[contains(text(),'İstanbul')]");
     private final By whereTo = By.xpath("//div[contains(text(),'Ankara')]");
-    private final By marketingAirlines = By.xpath("//div[@class='summary-marketing-airlines ']");
 
+    private final By flightCards = By.cssSelector("div.flight-item__wrapper");
+    private final By marketingAirlines = By.cssSelector(".summary-marketing-airlines");
+    private final By flightsDepartureTimes = By.cssSelector(".flight-departure-time");
+    private final By flightsArriveTimes = By.cssSelector(".flight-arrival-time");
+    private final By priceElements = By.cssSelector(".summary-average-price");
+    private final By flightDuration = By.cssSelector(".summary-duration span");
 
+    private final By currencyPrice = By.xpath("(//span[@class='money-int'])[1]");
+
+    private final By regionalSettingButton = By.xpath("//button[@data-testid='undefined-summary']");
+    private final By currencySetting = By.xpath("//input[@data-testid='currency-select-input']");
+    private final By selectOption = By.xpath("//div[@data-testid='currency-select-option-EUR']");
+    private final By saveButton = By.xpath("//button[@data-testid='display-settings-save']");
 
     public void filterDepartureTime() throws InterruptedException {
         click(departureTimeFilterDropdown);
@@ -152,5 +160,56 @@ public class FlightListing extends BasePage {
 
         return originalPrices.equals(sortedPrices);
     }
+
+    public List<Map<String, String>> exractFlightsData() {
+        List<Map<String, String>> data = new ArrayList<>();
+        List<WebElement> cards = findElements(flightCards);
+
+        for (WebElement card : cards) {
+            Map<String, String> flight = new HashMap<>();
+
+            flight.put("Airline Name", card.findElement(marketingAirlines).getText());
+            flight.put("Departure Time", card.findElement(flightsDepartureTimes).getText());
+            flight.put("Arrival Time", card.findElement(flightsArriveTimes).getText());
+            flight.put("Price", card.findElement(priceElements).getText());
+            flight.put("Flight Duration", card.findElement(flightDuration).getText());
+
+            data.add(flight);
+
+        }
+        return data;
+    }
+
+    public void calculateAveragePrice(List<Map<String, String>> flight) {
+        double avgPrice = DataAnalyzer.calculateAveragePrices(flight);
+        System.out.println("Average Price: " + Math.round(avgPrice) + " TL");
+    }
+
+    public String currency() {
+        return find(currencyPrice).getText();
+
+    }
+
+    public void changePriceCurrency() {
+        click(regionalSettingButton);
+        click(currencySetting);
+        set(currencySetting, "EUR");
+        click(selectOption);
+        click(saveButton);
+        waitFlightListLoading();
+    }
+
+    public boolean verifyCurrencyConversionIsAccurate(String tryPrice, String euroPrice) {
+
+        Double tryPriceDouble = Double.parseDouble(tryPrice.replace(".", ""));
+        double euroPriceDouble = Double.parseDouble(euroPrice);
+        Double exchangeRate = 49.210854;
+
+        double tryToEuroPrice = tryPriceDouble / exchangeRate;
+        return euroPriceDouble == Math.round(tryToEuroPrice);
+    }
+
+
+
 
 }

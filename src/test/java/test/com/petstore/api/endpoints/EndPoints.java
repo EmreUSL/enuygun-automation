@@ -47,6 +47,4 @@ public class EndPoints {
                 .delete(Routes.delete_url);
         return response;
     }
-
-
 }

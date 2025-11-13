@@ -1,0 +1,62 @@
+Airline Name,Departure Time,Arrival Time,Price,Flight Duration,Connection Information
+AJet,05:55,07:00,1.072 TL,1sa 5dk,null
+AJet,08:00,09:05,1.072 TL,1sa 5dk,null
+AJet,18:15,19:20,1.072 TL,1sa 5dk,null
+Pegasus,06:45,07:45,1.090 TL,1sa,null
+AJet,00:15,01:20,1.280 TL,1sa 5dk,null
+AJet,10:00,11:05,1.280 TL,1sa 5dk,null
+AJet,14:40,15:45,1.280 TL,1sa 5dk,null
+AJet,20:35,21:40,1.280 TL,1sa 5dk,null
+Pegasus,11:35,12:35,1.326 TL,1sa,null
+Pegasus,08:15,09:15,1.327 TL,1sa,null
+Pegasus,17:30,18:30,1.327 TL,1sa,null
+Pegasus,18:45,19:45,1.327 TL,1sa,null
+Pegasus,23:40,00:40,1.363 TL,1sa,null
+Pegasus,21:00,22:00,1.399 TL,1sa,null
+Pegasus,14:40,15:40,1.406 TL,1sa,null
+Pegasus,22:30,23:30,1.448 TL,1sa,null
+Türk Hava Yolları,01:00,02:10,1.627 TL,1sa 10dk,null
+Türk Hava Yolları,02:00,03:10,1.627 TL,1sa 10dk,null
+Türk Hava Yolları,11:00,12:10,1.627 TL,1sa 10dk,null
+Türk Hava Yolları,12:00,13:10,1.627 TL,1sa 10dk,null
+Türk Hava Yolları,13:00,14:10,1.627 TL,1sa 10dk,null
+Türk Hava Yolları,14:00,15:10,1.627 TL,1sa 10dk,null
+Türk Hava Yolları,19:00,20:10,1.627 TL,1sa 10dk,null
+Türk Hava Yolları,22:00,23:10,1.627 TL,1sa 10dk,null
+Türk Hava Yolları,23:00,00:10,1.627 TL,1sa 10dk,null
+Türk Hava Yolları,16:00,17:15,1.627 TL,1sa 15dk,null
+AJet,11:45,12:50,1.700 TL,1sa 5dk,null
+Türk Hava Yolları,08:00,09:10,2.093 TL,1sa 10dk,null
+Türk Hava Yolları,10:00,11:10,2.093 TL,1sa 10dk,null
+Türk Hava Yolları,15:00,16:10,2.093 TL,1sa 10dk,null
+AJet,18:45,22:35,2.130 TL,3sa 50dk,null
+AJet,01:30,06:10,2.130 TL,4sa 40dk,null
+AJet,05:50,11:00,2.130 TL,5sa 10dk,null
+AJet,05:35,11:00,2.232 TL,5sa 25dk,null
+AJet,16:55,22:35,2.232 TL,5sa 40dk,null
+AJet,01:05,11:00,2.232 TL,9sa 55dk,null
+AJet,19:25,00:50,2.235 TL,5sa 25dk,null
+AJet,16:00,20:05,2.330 TL,4sa 5dk,null
+AJet,13:25,18:05,2.330 TL,4sa 40dk,null
+AJet,09:45,15:30,2.330 TL,5sa 45dk,null
+AJet,12:35,18:10,2.406 TL,5sa 35dk,null
+AJet,21:30,06:10,2.406 TL,8sa 40dk,null
+AJet,05:45,11:05,2.556 TL,5sa 20dk,null
+AJet,09:10,15:45,2.671 TL,6sa 35dk,null
+Türk Hava Yolları,07:00,08:10,2.673 TL,1sa 10dk,null
+Türk Hava Yolları,09:00,10:10,2.673 TL,1sa 10dk,null
+Pegasus,23:45,08:10,2.682 TL,8sa 25dk,null
+Pegasus,12:50,20:50,2.825 TL,8sa,null
+AJet,01:10,06:40,2.909 TL,5sa 30dk,null
+AJet,01:35,06:05,2.989 TL,4sa 30dk,null
+AJet,01:05,06:10,3.079 TL,5sa 5dk,null
+AJet,23:45,06:20,3.109 TL,6sa 35dk,null
+AJet,20:15,06:20,3.109 TL,10sa 5dk,null
+AJet,06:45,11:25,3.110 TL,4sa 40dk,null
+AJet,23:55,06:05,3.110 TL,6sa 10dk,null
+AJet,20:45,06:05,3.110 TL,9sa 20dk,null
+AJet,09:45,22:30,3.287 TL,12sa 45dk,null
+Türk Hava Yolları,18:00,19:10,3.465 TL,1sa 10dk,null
+Türk Hava Yolları,21:00,22:10,3.465 TL,1sa 10dk,null
+AJet,13:10,22:30,3.487 TL,9sa 20dk,null
+AJet,20:55,06:10,4.173 TL,9sa 15dk,null

@@ -13,6 +13,7 @@ public class FlightSearch extends BasePage {
         super(driver);
     }
 
+    private final By dismissButton = By.xpath("//div[contains(text(),'Bu tarihler için otelleri de listele')]");
     private final By flightFrom = By.xpath("//div[contains(text(), 'Nereden')]");
     private final By inputFlightFrom = By.xpath("//input[@name=\"origin\"]");
     private final By flightTo = By.xpath("//div[contains(text(), 'Nereye')]");
@@ -43,14 +44,14 @@ public class FlightSearch extends BasePage {
         String day = parts[0];
         String monthAndYear = parts[1] + " " + parts[2];
 
-        String first = driver.findElement(By.xpath("(//h3[@class=\"sc-dgtOuX bsWQs\"])[1]")).getText();
-        String second = driver.findElement(By.xpath("(//h3[@class=\"sc-dgtOuX bsWQs\"])[2]")).getText();
+        String first = driver.findElement(By.xpath("(//h3[@data-testid='enuygun-homepage-flight-departureDate-month-name-and-year'])[1]")).getText();
+        String second = driver.findElement(By.xpath("(//h3[@data-testid='enuygun-homepage-flight-departureDate-month-name-and-year'])[2]")).getText();
 
         while(!monthAndYear.equals(first) && !monthAndYear.equals(second)){
             click(departureDateForwardButton);
 
-            first = driver.findElement(By.xpath("(//h3[@class='sc-dgtOuX bsWQs'])[1]")).getText();
-            second = driver.findElement(By.xpath("(//h3[@class='sc-dgtOuX bsWQs'])[2]")).getText();
+            first = driver.findElement(By.xpath("(//h3[@data-testid='enuygun-homepage-flight-departureDate-month-name-and-year'])[1]")).getText();
+            second = driver.findElement(By.xpath("(//h3[@data-testid='enuygun-homepage-flight-departureDate-month-name-and-year'])[2]")).getText();
         }
 
         if(monthAndYear.equals(first)) {
@@ -78,14 +79,14 @@ public class FlightSearch extends BasePage {
         String dayReturn = parts[0];
         String monthAndYearReturn = parts[1] + " " + parts[2];
 
-        String third = driver.findElement(By.xpath("(//h3[@class='sc-dgtOuX bsWQs'])[1]")).getText();
-        String fourth = driver.findElement(By.xpath("(//h3[@class='sc-dgtOuX bsWQs'])[2]")).getText();
+        String third = driver.findElement(By.xpath("(//h3[@data-testid='enuygun-homepage-flight-returnDate-month-name-and-year'])[1]")).getText();
+        String fourth = driver.findElement(By.xpath("(//h3[@data-testid='enuygun-homepage-flight-returnDate-month-name-and-year'])[2]")).getText();
 
         while(!monthAndYearReturn.equals(third) && !monthAndYearReturn.equals(fourth)){
             click(returnDateForwardButton);
 
-            third = driver.findElement(By.xpath("(//h3[@class='sc-dgtOuX bsWQs'])[1]")).getText();
-            fourth = driver.findElement(By.xpath("(//h3[@class='sc-dgtOuX bsWQs'])[2]")).getText();
+            third = driver.findElement(By.xpath("(//h3[@data-testid='enuygun-homepage-flight-returnDate-month-name-and-year'])[1]")).getText();
+            fourth = driver.findElement(By.xpath("(//h3[@data-testid='enuygun-homepage-flight-returnDate-month-name-and-year'])[2]")).getText();
         }
 
         if(monthAndYearReturn.equals(third)) {
@@ -105,6 +106,11 @@ public class FlightSearch extends BasePage {
 
     public void clickSearchButton() {
         click(searchButton);
+    }
+
+    public void clickDismissButton() {
+        waitforSecond();
+        click(dismissButton);
     }
 
 
