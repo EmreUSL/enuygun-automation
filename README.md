@@ -6,40 +6,47 @@ This project is an automation framework for testing flight search functionalitie
 
 <img width="1146" height="463" alt="Screenshot 2025-11-13 at 22 04 51" src="https://github.com/user-attachments/assets/af922043-b234-481c-9168-99062b83bca9" />
 
-## Overview
-
-The automation covers:
-
-- Searching for round-trip flights between configurable cities.
-- Setting departure and return dates dynamically.
-- Applying filters on the flight listing page, such as departure time or airline.
-- Verifying the displayed flights match the selected route and applied filters.
-- Currency Validation: Confirms that flight prices update correctly when changing between TRY and EUR. ( Case 3 )
+![Flight Automation](https://user-images.githubusercontent.com/placeholder/flight-banner.png)
+*Comprehensive solution for flight search and filtering automation.*
 
 ---
 
-## Features
+## 🔍 Overview
+
+The automation covers:
+
+- 🛫 Searching for round-trip flights between configurable cities.
+- 📅 Setting departure and return dates dynamically.
+- 🎛 Applying filters on the flight listing page, such as departure time or airline.
+- ✅ Verifying the displayed flights match the selected route and applied filters.
+- 💱 Currency Validation: Confirms that flight prices update correctly when changing between TRY and EUR. (Case 3)
+
+---
+
+## ⚡ Features
+
 1. **Flight Search & Time Filter**  
    - Performs round-trip flight searches with parameterized departure/return dates and cities.  
    - Applies time filters on departure flights and verifies results are within the expected range.  
 
 2. **Airline-Specific Price Sorting**  
-   - Filters flights for a specific airline (e.g., Turkish Airlines)  
+   - Filters flights for a specific airline (e.g., Turkish Airlines).  
    - Validates ascending price sorting and correct airline display.  
 
-3. **Currency Validation**  
+3. **Currency Validation 💶**  
    - Checks if displayed prices correctly update when switching between TRY and EUR.  
 
-4. **Reporting & Screenshots**  
+4. **Reporting & Screenshots 📸**  
    - Generates detailed execution reports using ExtentReports.  
    - Captures screenshots on failure or at key test steps for easier debugging.  
 
-5. **Logging**  
+5. **Logging 📝**  
    - Uses Log4j2 to track execution steps and debug issues.  
 
 ---
 
-## Technologies & Tools
+## 🛠 Technologies & Tools
+
 - **Java 21** – Main programming language used for automation scripts.  
 - **Selenium 4.38.0** – For browser automation and UI interactions.  
 - **TestNG 7.11.0** – Test framework for structuring and running test cases.  
@@ -50,9 +57,12 @@ The automation covers:
 
 ---
 
-## Framework Structure
+## 🏗 Framework Structure
+
 - **Page Object Model (POM)** – Each page has a corresponding Java class with reusable methods.  
 - **Config Management** – Centralized `config.properties` file for browser, URLs, and date configurations.  
 - **Driver Factory** – Handles WebDriver initialization and teardown for parallel execution.  
 - **Listeners & Reporting** – TestNG listeners capture screenshots and integrate with ExtentReports.  
 - **Utility Classes** – Helper methods for date selection, element interactions, CSV handling, and logging.  
+
+---
