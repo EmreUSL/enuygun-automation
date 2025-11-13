@@ -1,6 +1,6 @@
 # EnUygun-Automation
 
-This project automates flight search and filtering on **Enuygun.com** using **Selenium** and, following a clean and maintainable **Page Object Model (POM)** structure.
+This project is an automation framework for testing flight search functionalities on Enuygun.com. It covers various scenarios including round-trip flight searches, time filters, airline-specific price sorting, and currency validation (TRY/EUR). The framework is designed to be modular and maintainable, using the Page Object Model (POM) structure for all pages and components.
 
 
 
@@ -18,12 +18,41 @@ The automation covers:
 
 ---
 
-## Key Features
+## Features
+1. **Flight Search & Time Filter**  
+   - Performs round-trip flight searches with parameterized departure/return dates and cities.  
+   - Applies time filters on departure flights and verifies results are within the expected range.  
 
-- **Page Object Model (POM):** Separates test logic from page interactions for maintainability.
-- **Thread-safe WebDriver:** Each test runs with its own WebDriver instance using `ThreadLocal`.
-- **Logging:** Uses **Log4j2** to record test execution steps and debug information.
-- **Screenshots:** Captures screenshots automatically on test failures for easier debugging.
-- **CSV Data Extraction:** Flight details like airline, departure/arrival times, price, and duration are extracted and can be exported to CSV for reporting.
+2. **Airline-Specific Price Sorting**  
+   - Filters flights for a specific airline (e.g., Turkish Airlines)  
+   - Validates ascending price sorting and correct airline display.  
+
+3. **Currency Validation**  
+   - Checks if displayed prices correctly update when switching between TRY and EUR.  
+
+4. **Reporting & Screenshots**  
+   - Generates detailed execution reports using ExtentReports.  
+   - Captures screenshots on failure or at key test steps for easier debugging.  
+
+5. **Logging**  
+   - Uses Log4j2 to track execution steps and debug issues.  
 
 ---
+
+## Technologies & Tools
+- **Java 21** – Main programming language used for automation scripts.  
+- **Selenium 4.38.0** – For browser automation and UI interactions.  
+- **TestNG 7.11.0** – Test framework for structuring and running test cases.  
+- **WebDriverManager 6.3.3** – Automatic driver management for different browsers.  
+- **ExtentReports 5.1.0** – For generating detailed test reports with screenshots.  
+- **Log4j 2.25.2** – Logging framework to record execution details.  
+- **Rest-Assured 5.5.6** – For API testing (used in specific test cases).  
+
+---
+
+## Framework Structure
+- **Page Object Model (POM)** – Each page has a corresponding Java class with reusable methods.  
+- **Config Management** – Centralized `config.properties` file for browser, URLs, and date configurations.  
+- **Driver Factory** – Handles WebDriver initialization and teardown for parallel execution.  
+- **Listeners & Reporting** – TestNG listeners capture screenshots and integrate with ExtentReports.  
+- **Utility Classes** – Helper methods for date selection, element interactions, CSV handling, and logging.  
